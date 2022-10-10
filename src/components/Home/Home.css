@@ -1,0 +1,18 @@
+.img-write{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: 	#787878;
+}
+.img-write img{
+    height: 230px;
+    border-radius: 15px;
+    border: 5px solid darkgreen;
+}
+.text{
+    color: aquamarine;
+    border: 5px solid #585858;
+    padding: 0 20px;
+    border-radius: 10px;
+}

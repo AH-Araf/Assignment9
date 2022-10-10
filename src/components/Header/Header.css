@@ -1,0 +1,31 @@
+.header-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.router-container a{
+    text-decoration: none;
+    margin: 10px;
+    font-size: large;
+    background-color:lightseagreen;
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: white;
+}
+.router-container a:hover{
+    background-color:aquamarine;
+    color: black;
+}
+.logo-design{
+
+}
+.color{
+    color: red;
+}
+.color1{
+    color: orange;
+}
+.color2{
+    color: lightseagreen;
+}
