@@ -10,7 +10,7 @@ const Home = () => {
         <div>
             <div className='img-write'>
             <div className='text'>
-                    <i><h1>Welcome, This is Araf's Quiz Zone</h1>
+                    <i><h1>Welcome, This is Araf's Quiz Zone.</h1>
                     <h2>Select your topic</h2></i>
                 </div>
                 <div>

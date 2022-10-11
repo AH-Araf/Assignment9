@@ -30,3 +30,35 @@
     justify-content: center;
     text-align: center;
 }
+
+@media only screen and (max-width: 515px) {
+
+    .display-flex{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .img-write{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        padding: 10px 0;
+        background-color: 	#787878;
+        
+    }
+
+}
+@media only screen and (min-width: 516px) and (max-width:1150px) {
+
+    .display-flex{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    
+  }
