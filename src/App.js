@@ -14,13 +14,16 @@ function App() {
 
     children: [
       { path: '/',
-      loader: async ({params}) => {
+      loader: async ({data}) => {
         return fetch('https://openapi.programming-hero.com/api/quiz')
       },
       element: <Home></Home>
       },
       {
         path: '/topics',
+        loader: async ({data}) => {
+          return fetch('https://openapi.programming-hero.com/api/quiz')
+        },
         element: <Topics></Topics>
       },
       {

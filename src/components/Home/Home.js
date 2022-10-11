@@ -1,10 +1,11 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Topic from '../Topic/Topic';
 import './Home.css'
 
 
 const Home = () => {
-    const quiz = useLoaderData();
+    const {data} = useLoaderData();
     return (
         <div>
             <div className='img-write'>
@@ -17,8 +18,13 @@ const Home = () => {
                 </div>   
             </div>
 
-            <div>
-                <p>dfgdfg:{quiz.length}</p>
+            <div className='display-flex'>
+                {
+                    data.map(quiz => <Topic
+                        key={quiz.id}
+                        quiz={quiz}
+                    ></Topic>)
+                }
             </div>
         </div>
     );
