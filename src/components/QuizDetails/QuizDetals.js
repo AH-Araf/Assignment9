@@ -6,7 +6,7 @@ import './QuizDetails.css'
 
 const QuizDetals = () => {
     const quiz = useLoaderData();
-    console.log(quiz.data)
+    // console.log(quiz.data)
     let quiz1 = (quiz.data.questions);
     
     return (
@@ -16,6 +16,7 @@ const QuizDetals = () => {
             <div>
             {
                 quiz1.map (solve=> <Quiz
+                key={solve.id}
                  solve={solve}
                 ></Quiz>)
             }
