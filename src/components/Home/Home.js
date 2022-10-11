@@ -25,6 +25,7 @@ const Home = () => {
                         quiz={quiz}
                     ></Topic>)
                 }
+                
             </div>
         </div>
     );
