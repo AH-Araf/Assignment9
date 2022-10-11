@@ -1,0 +1,12 @@
+.dis-flex{
+    display: flex;
+    align-items: center;
+}
+.question-set{
+    margin-right: 20px;
+}
+.option-color{
+    color: green;
+    display: grid;  
+    margin-bottom: 10px;
+}

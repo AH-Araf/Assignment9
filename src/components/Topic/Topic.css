@@ -7,6 +7,9 @@
     font-weight: bold;
     color: darkgreen;
 }
+.button-class a{
+    text-decoration: none;
+}
 .all-quiz img{
     width: 200px;
     border: 3px solid 	#787878;
@@ -29,5 +32,5 @@
 .btn-design:hover{
     background-color: palegoldenrod;
     color: red;
-    padding: 6px 14px ;
+    padding: 6px 20px ;
 }

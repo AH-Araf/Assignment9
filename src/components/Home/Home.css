@@ -4,20 +4,29 @@
     align-items: center;
     padding: 10px 0;
     background-color: 	#787878;
+    
 }
 .img-write img{
     height: 230px;
     border-radius: 15px;
     border: 5px solid darkgreen;
+    
 }
+/* .App {
+    text-align: center;
+} */
+
 .text{
     color: aquamarine;
     border: 5px solid #585858;
     padding: 0 20px;
     border-radius: 10px;
+    
 }
 .display-flex{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 40px 0;
+    justify-content: center;
+    text-align: center;
 }
