@@ -6,7 +6,6 @@ import './Home.css'
 
 const Home = () => {
     const {data} = useLoaderData();
-    const a = 5;
     return (
         <div>
             <div className='img-write'>

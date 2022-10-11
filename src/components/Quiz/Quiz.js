@@ -13,7 +13,7 @@ const Quiz = ({solve}) => {
     return (
         <div>
             <div className='dis-flex'>
-                <p className='question-set'>{solve.question}</p>
+                <p className='question-set'>Question: {solve.question}</p>
                 <FontAwesomeIcon onClick={a} icon={faEye}></FontAwesomeIcon>
                 <ToastContainer/>
             </div>
