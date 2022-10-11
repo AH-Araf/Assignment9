@@ -1,0 +1,15 @@
+.conatiner{
+    margin: 20px 40px;
+}
+.que{
+    color: red;
+}
+.ans{
+    font-weight: bold;
+    color: green;
+}
+.bottom{
+    margin-bottom: 25px;
+    border: 3px solid gray;
+    padding: 0 10px;
+}
