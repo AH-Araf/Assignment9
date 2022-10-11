@@ -12,8 +12,8 @@ const Statistics = () => {
             // console.log(dataLoaded);
             const quizData = dataLoaded.map(quiz =>{
                 const singleData ={
-                    name: quiz.name,
-                    total: quiz.total
+                    Name: quiz.name,
+                    Quiz: quiz.total
                 }
                 return singleData;
             })
@@ -23,13 +23,6 @@ const Statistics = () => {
     } ,[])
     return (
         <div className='chart'>
-        {/* <BarChart width={300} height={400} data={quiz}>
-          <Bar dataKey="total" fill="#8884d8" />
-          <XAxis  dataKey="name" />
-          <YAxis />
-          <Tooltip></Tooltip>
-        </BarChart> */}
-
         <LineChart
           width={400}
           height={300}
@@ -42,14 +35,13 @@ const Statistics = () => {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis dataKey="total"/>
+          <XAxis dataKey="Name" />
+          <YAxis dataKey="Quiz"/>
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="name" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="Name" stroke="#8884d8" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="Quiz" stroke="red" />
         </LineChart>
-      
         </div>
     );
 };
