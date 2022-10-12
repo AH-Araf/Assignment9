@@ -9,6 +9,7 @@ const QuizDetals = () => {
     // console.log(quiz.data)
     let quiz1 = (quiz.data.questions);
     
+    
     return (
         <div className='questions'>
             <h2 className='border'><span className='red'> Quiz Topic:</span> <span className='green'>{quiz.data.name}</span></h2>

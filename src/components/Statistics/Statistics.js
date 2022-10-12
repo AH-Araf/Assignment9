@@ -23,6 +23,7 @@ const Statistics = () => {
     } ,[])
     return (
         <div className='chart'>
+          <ResponsiveContainer width="95%" height={500}>
         <LineChart
           width={400}
           height={300}
@@ -42,6 +43,7 @@ const Statistics = () => {
           <Line type="monotone" dataKey="Name" stroke="#8884d8" activeDot={{ r: 8 }} />
           <Line type="monotone" dataKey="Quiz" stroke="red" />
         </LineChart>
+        </ResponsiveContainer>
         </div>
     );
 };

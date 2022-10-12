@@ -1,14 +1,19 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faEye } from '@fortawesome/free-solid-svg-icons'
+import { faAlignJustify, faEye } from '@fortawesome/free-solid-svg-icons'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Quiz.css'
 
 const Quiz = ({solve}) => {
-    const {correctAnswer} = solve;
+    console.log(solve)
+    const {correctAnswer, options} = solve;
 
-    const a =() => toast(correctAnswer);
+    const a =() => toast(`Answer: ${correctAnswer}`);
+
+    const justify = (id) => {
+        options[id] === correctAnswer ? toast('right') : toast('wrong')
+    }
 
     return (
         <div>
@@ -18,22 +23,53 @@ const Quiz = ({solve}) => {
                 <ToastContainer/>
             </div>
 
+
             <div>
+
+                <div className="form-check">
+                <input onClick={(id) => justify(id)}  className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                <label className="form-check-label" for="flexRadioDefault1">
+                
                 <div className='option-color'>
-                {solve.options[0]}
+                {options[0]}
                 </div>
 
-                <div className='option-color'>
-                {solve.options[1]}
+                </label>
                 </div>
 
+                <div className="form-check">
+                <input onClick={(id) => justify(id)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                <label className="form-check-label" for="flexRadioDefault1">
+                
                 <div className='option-color'>
-                {solve.options[2]}
+                {options[1]}
                 </div>
 
-                <div className='option-color'>
-                {solve.options[3]}
+                </label>
                 </div>
+
+                <div className="form-check">
+                <input onClick={(id) => justify(id)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                <label className="form-check-label" for="flexRadioDefault1">
+                
+                <div className='option-color'>
+                {options[2]}
+                </div>
+
+                </label>
+                </div>
+
+                <div className="form-check">
+                <input onClick={(id) => justify(id)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                <label className="form-check-label" for="flexRadioDefault1">
+        
+                <div className='option-color'>
+                {options[3]}
+                </div>
+
+                </label>
+                </div>
+
             </div>
         </div>
     );
