@@ -11,8 +11,8 @@ const Quiz = ({solve}) => {
 
     const a =() => toast(`Answer: ${correctAnswer}`);
 
-    const justify = (id) => {
-        options[id] === correctAnswer ? toast('right') : toast('wrong')
+    const handleAnswer = (opt) => {
+        opt === correctAnswer ? toast('Correct Answer') : toast('Wrong Answer')
     }
 
     return (
@@ -25,48 +25,39 @@ const Quiz = ({solve}) => {
 
 
             <div>
-
                 <div className="form-check">
-                <input onClick={(id) => justify(id)}  className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                <input onClick={() => handleAnswer(options[0])}  className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
                 <label className="form-check-label" for="flexRadioDefault1">
-                
                 <div className='option-color'>
                 {options[0]}
                 </div>
-
                 </label>
                 </div>
 
                 <div className="form-check">
-                <input onClick={(id) => justify(id)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                <input onClick={() => handleAnswer(options[1])}  className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
                 <label className="form-check-label" for="flexRadioDefault1">
-                
                 <div className='option-color'>
                 {options[1]}
                 </div>
-
                 </label>
                 </div>
 
                 <div className="form-check">
-                <input onClick={(id) => justify(id)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                <input onClick={() => handleAnswer(options[2])}  className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
                 <label className="form-check-label" for="flexRadioDefault1">
-                
                 <div className='option-color'>
                 {options[2]}
                 </div>
-
                 </label>
                 </div>
 
                 <div className="form-check">
-                <input onClick={(id) => justify(id)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                <input onClick={() => handleAnswer(options[3])}  className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
                 <label className="form-check-label" for="flexRadioDefault1">
-        
                 <div className='option-color'>
                 {options[3]}
                 </div>
-
                 </label>
                 </div>
 
